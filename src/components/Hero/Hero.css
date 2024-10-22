@@ -1,0 +1,131 @@
+.container {
+  position: relative;
+  display: flex;
+  /* flex-direction: column; */
+  /* flex-direction: column-reverse; */
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 150px;
+  margin-bottom: 160px;
+  margin-left: 10%;
+  margin-right: 10%;
+  /* height: 100vh; */
+  z-index: 1;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-text);
+  z-index: 1;
+}
+
+.hero-title {
+  font-size: 72px;
+  font-weight: 900;
+  margin-bottom: 30px;
+  font-family: var(--font-roboto);
+}
+
+.title {
+  font-size: 72px;
+  font-weight: 900;
+  margin-bottom: 33px;
+  font-family: var(--font-roboto);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 1) 70%,
+    rgba(255, 255, 255, 0) 120%
+  );
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+.description {
+  font-size: 30px;
+  font-family: var(--font-roboto);
+  margin-bottom: 6px;
+}
+
+.description-tech {
+  font-size: 40px;
+  font-weight: 900;
+  color: coral;
+  color: var(--color-special);
+  margin-bottom: 52px;
+}
+
+.hero-img {
+  width: 50%;
+  z-index: 1;
+  border-radius: 20px;
+
+  /* animation-name: floating;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out; */
+}
+
+@keyframes floating {
+  0% {
+    transform: translate(0, 0px);
+  }
+  50% {
+    transform: translate(0, 10px);
+  }
+  100% {
+    transform: translate(0, -0px);
+  }
+}
+
+.top-blur {
+  position: absolute;
+  width: 50vw;
+  height: 40vw;
+  min-width: 350px;
+  min-width: 350px;
+  top: -128px;
+  left: -10vw;
+  border-radius: 764px;
+  background: rgba(25, 55, 109, 0.7);
+  filter: blur(100px);
+  z-index: 0;
+}
+
+.bottom-blur {
+  position: absolute;
+  width: 70vw;
+  height: 50vw;
+  min-width: 350px;
+  min-width: 250px;
+  top: 246px;
+  right: -25vw;
+  border-radius: 764px;
+  background: rgba(25, 55, 109, 0.7);
+  filter: blur(100px);
+  z-index: 0;
+}
+
+.carousel {
+  width: 900px;
+  /* height: 800px; */
+}
+
+.carousel img {
+  height: 400px;
+  /* transform: skewY(5deg); */
+  padding: 50px;
+  border-radius: 60px;
+}
+
+@media screen and (max-width: 830px) {
+  .container {
+    flex-direction: column-reverse;
+  }
+
+  .content {
+    align-items: center;
+  }
+}

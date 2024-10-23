@@ -33,3 +33,10 @@
   font-family: var(--font-roboto);
   font-weight: 500;
 }
+
+@media screen and (max-width: 830px) {
+  .skills {
+    width: 90%;
+    gap: 27px;
+  }
+}

@@ -21,3 +21,34 @@
   justify-content: center;
   gap: 37px;
 }
+
+@media screen and (max-width: 830px) {
+  .footer-container {
+    padding: 0px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* gap: 100px; */
+    max-width: 1400px;
+  }
+
+  .social {
+    /* width: 40%; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 37px;
+    padding: 20px;
+  }
+
+  .footer-contact {
+    text-align: center;
+    padding: 20px;
+  }
+
+  .footer-logo {
+    display: none;
+  }
+}

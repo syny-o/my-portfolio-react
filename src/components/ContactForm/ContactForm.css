@@ -1,18 +1,11 @@
-.contact-form-container {
-  color: var(--color-text);
-  margin-top: 90px;
-  margin-bottom: 80px;
-  margin-left: 10%;
-  margin-right: 10%;
-}
-
 .contact-form {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 80%;
+  max-width: 1280px;
   margin: auto;
+  margin-bottom: 120px;
 }
 
 .form-group {

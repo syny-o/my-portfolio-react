@@ -1,5 +1,6 @@
 import React from "react";
 import "./ProjectCard.css";
+import Button from "../Shared/Button";
 
 export const ProjectCard = ({
   project: { title, imageSrc, description, skills, demo, source },
@@ -23,12 +24,8 @@ export const ProjectCard = ({
         })}
       </ul>
       <div className="project-card-links">
-        <a href={demo} className="btn-primary">
-          Navštívit
-        </a>
-        <a href={source} className="btn-primary">
-          Github
-        </a>
+        <Button text={"Navštívit"} href={"#"} />
+        <Button text={"Github"} href={"#"} />
       </div>
     </div>
   );

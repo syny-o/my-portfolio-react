@@ -2,32 +2,32 @@ import React from "react";
 import { ReactTyped } from "react-typed";
 import "./Hero.css";
 import Carousel from "./Carousel";
+import Button from "../Shared/Button";
 
 function Hero() {
   return (
-    <section className="container">
+    <section className="hero-container">
       <div className="content">
         <h1 className="hero-title">Ondřej Synek</h1>
-        <p className="description">Python developer se slabostí pro</p>
+        <p className="description">Python developer s nadšením pro</p>
         <p className="description-tech">
           <ReactTyped
             strings={[
-              "Python",
+              // "Python",
               "Django",
               "Javascript",
-              "React",
-              "TailWind",
-              "Docker",
+              "React JS",
+              "TailWind CSS",
+              "Bootstrap",
               "REST-API",
+              "Docker",
             ]}
             typeSpeed={100}
             loop
           />
         </p>
 
-        <a className="btn-primary" href="">
-          Kontaktovat
-        </a>
+        <Button text={"Kontaktovat"} href={"#"} />
       </div>
 
       {/* <img

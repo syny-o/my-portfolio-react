@@ -1,10 +1,11 @@
 import React from "react";
 import "./ContactForm.css";
+import Button from "../Shared/Button";
 
 const ContactForm = () => {
   return (
-    <section className="contact-form-container">
-      <h2 className="experience-title">Kontakt</h2>
+    <section className="container">
+      <h2 className="section-title">Kontakt</h2>
       <form className="contact-form">
         <div className="form-group">
           {/* <label htmlFor="name">Name:</label> */}
@@ -32,9 +33,7 @@ const ContactForm = () => {
             placeholder="Zpráva"
           ></textarea>
         </div>
-        <button type="submit" className="btn-primary">
-          Odeslat
-        </button>
+        <Button text={"Odeslat"} href={""} />
       </form>
     </section>
   );

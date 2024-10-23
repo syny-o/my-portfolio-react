@@ -1,9 +1,23 @@
 .footer {
-  padding: 50px;
+  color: var(--color-text);
   background-color: var(--color-dark);
+}
+
+.footer-container {
+  padding: 60px;
+  margin: auto;
   margin-top: 60px;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  color: var(--color-text);
+  /* gap: 100px; */
+  max-width: 1400px;
+}
+
+.social {
+  /* width: 40%; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 37px;
 }

@@ -6,7 +6,7 @@ import { ProjectCard } from "./ProjectCard";
 
 export const Projects = () => {
   return (
-    <section className="projects-container" id="projects">
+    <section className="container" id="projects">
       <h2 className="section-title">Projekty</h2>
       <div className="projects">
         {projects.map((project, id) => {

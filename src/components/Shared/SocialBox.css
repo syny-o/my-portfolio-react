@@ -1,0 +1,27 @@
+.social {
+  /* width: 40%; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.social-image-container {
+  background-color: var(--color-text);
+  background-color: var(--color-secondary);
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+}
+
+.social-image-container:hover {
+  background-color: var(--color-special);
+}
+
+.social-image-container img {
+  width: 35px;
+}

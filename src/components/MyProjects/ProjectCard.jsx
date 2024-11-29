@@ -1,4 +1,4 @@
-import React from "react";
+import { FaArrowRight, FaGithub } from "react-icons/fa6";
 import "./ProjectCard.css";
 import Button from "../Shared/Button";
 
@@ -24,8 +24,12 @@ export const ProjectCard = ({
         })}
       </ul>
       <div className="project-card-links">
-        <Button text={"Navštívit"} href={"#"} />
-        <Button text={"Github"} href={"#"} />
+        <Button
+          text={"Web"}
+          href={"#"}
+          icon={<FaArrowRight className="icon" />}
+        />
+        <Button text={"Kód"} href={"#"} icon={<FaGithub className="icon" />} />
       </div>
     </div>
   );

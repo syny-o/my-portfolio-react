@@ -1,6 +1,8 @@
 :root {
   /* Colors */
   --color-text: #fff;
+  /* --color-text-grey: rgba(255, 255, 255, 0.4); */
+  --color-text-grey: #fff4;
   --color-primary: #576cbc;
   --color-secondary: #19376d;
   --color-dark: #0b2447;
@@ -35,12 +37,13 @@
 
 .section-title {
   color: var(--color-text);
+  color: var(--color-text-grey);
   font-size: 35px;
   font-weight: 700;
   letter-spacing: 1.75px;
   text-transform: uppercase;
   text-align: center;
-  opacity: 0.4;
+  /* opacity: 0.4; */
   margin-bottom: 30px;
   margin-top: 150px;
 }

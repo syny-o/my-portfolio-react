@@ -7,10 +7,22 @@
   z-index: 1;
 }
 
+.avatar {
+  height: 200px;
+  border-radius: 50%;
+  border: 3px solid var(--color-special);
+  margin-bottom: 10px;
+
+  animation-name: floating;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
 .hero-title {
-  font-size: 72px;
+  font-size: 64px;
   font-weight: 900;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   font-family: var(--font-roboto);
 }
 
@@ -29,17 +41,17 @@
 }
 
 .description {
-  font-size: 30px;
+  font-size: 35px;
   font-family: var(--font-roboto);
-  margin-bottom: 6px;
+  margin-bottom: 10px;
 }
 
 .description-tech {
-  font-size: 40px;
+  font-size: 35px;
   font-weight: 900;
   color: coral;
   color: var(--color-special);
-  margin-bottom: 52px;
+  margin-bottom: 30px;
 }
 
 .hero-img {
@@ -58,7 +70,7 @@
     transform: translate(0, 0px);
   }
   50% {
-    transform: translate(0, 10px);
+    transform: translate(0, 5px);
   }
   100% {
     transform: translate(0, -0px);

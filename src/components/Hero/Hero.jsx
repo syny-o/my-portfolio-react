@@ -8,19 +8,19 @@ function Hero() {
   return (
     <section className="hero-container">
       <div className="content">
+        <img className="avatar" src="/assets/avatar/syny.png" alt="" />
         <h1 className="hero-title">Ondřej Synek</h1>
-        <p className="description">Python developer s nadšením pro</p>
+        <p className="description">Rád používám...</p>
         <p className="description-tech">
           <ReactTyped
             strings={[
-              // "Python",
+              "Python",
               "Django",
+              "PyQt",
               "Javascript",
               "React JS",
               "TailWind CSS",
               "Bootstrap",
-              "REST-API",
-              "Docker",
             ]}
             typeSpeed={100}
             loop

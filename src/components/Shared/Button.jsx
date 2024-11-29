@@ -1,10 +1,10 @@
 import React from "react";
 import "./Button.css";
 
-function Button({ text, href }) {
+function Button({ text, href, icon }) {
   return (
     <a className="btn" href={href}>
-      {text}
+      {icon} {text}
     </a>
   );
 }

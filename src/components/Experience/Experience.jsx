@@ -2,6 +2,7 @@ import React from "react";
 import "./Experience.css";
 import career from "../../data/career.json";
 import skills from "../../data/skills.json";
+import ExperienceElement from "./ExperienceElement";
 
 function Experience() {
   return (
@@ -10,23 +11,7 @@ function Experience() {
 
       <ul className="career">
         {career.map((careerItem, id) => {
-          return (
-            <li key={id} className="career-item">
-              <img
-                src={careerItem.imageSrc}
-                alt={`${careerItem.organisation} Logo`}
-              />
-              <div className="career-item-details">
-                <h3>{`${careerItem.role}, ${careerItem.organisation}`}</h3>
-                <p className="color-special">{`${careerItem.startDate} - ${careerItem.endDate}`}</p>
-                <ul>
-                  {careerItem.experiences.map((experience, id) => {
-                    return <li key={id}>{experience}</li>;
-                  })}
-                </ul>
-              </div>
-            </li>
-          );
+          return <ExperienceElement id={id} careerItem={careerItem} />;
         })}
       </ul>
     </section>

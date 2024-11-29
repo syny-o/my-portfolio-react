@@ -56,11 +56,11 @@
   align-items: center;
   justify-content: center;
   gap: 25px;
-  margin-top: 150px;
-  margin-bottom: 160px;
-  margin-left: 10%;
-  margin-right: 10%;
-  /* height: 100vh; */
+  /* margin-top: 150px; */
+  /* margin-bottom: 160px; */
+  /* margin-left: 10%; */
+  /* margin-right: 10%; */
+  height: 100vh;
   z-index: 1;
 }
 

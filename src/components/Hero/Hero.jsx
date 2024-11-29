@@ -10,6 +10,7 @@ function Hero() {
   return (
     <section className="hero-container">
       <div className="content">
+        <div className="top-blur"></div>
         <div className="avatar-overlay">
           <img className="avatar" src="/assets/avatar/syny.png" alt="" />
         </div>
@@ -50,7 +51,7 @@ function Hero() {
         <Carousel />
       </div>
 
-      <div className="top-blur"></div>
+      {/* <div className="top-blur"></div> */}
       {/* <div className="bottom-blur"></div> */}
     </section>
   );

@@ -10,15 +10,17 @@ function Navbar() {
       {/* <a className="title" href="/">
         <img className="logo" src="/assets/avatar/syny.png" alt="" />
       </a> */}
-      <SocialBox />
-      <img
-        className="menu-btn"
-        src={
-          menuOpen ? "/assets/nav/closeIcon.png" : "/assets/nav/menuIcon.png"
-        }
-        alt="menu-button"
-        onClick={() => setMenuOpen(!menuOpen)}
-      />
+      {/* <SocialBox /> */}
+      <div className="menu-btn-box">
+        <img
+          className="menu-btn"
+          src={
+            menuOpen ? "/assets/nav/closeIcon.png" : "/assets/nav/menuIcon.png"
+          }
+          alt="menu-button"
+          onClick={() => setMenuOpen(!menuOpen)}
+        />
+      </div>
       <div className="menu">
         <ul
           className={menuOpen ? "menu-items menu-open" : "menu-items"}

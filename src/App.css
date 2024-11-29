@@ -7,6 +7,7 @@
   --color-bg: #04152d;
   --color-special: coral;
   --color-special: rgb(255, 50, 255);
+  --color-special: #1396d7;
 
   /* Fonts */
   --font-roboto: "Roboto";
@@ -17,6 +18,7 @@
   margin: 0;
   padding: 0;
   font-family: "Outfit", Arial, Helvetica, sans-serif;
+  letter-spacing: 1px;
   /* font-family: "Robot"; */
   /* color: var(--color-text); */
 }

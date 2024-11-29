@@ -1,11 +1,18 @@
 .project-card-container {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   border-radius: 10px;
-  background: linear-gradient(180deg, #576cbc 0%, #132a53 100%);
+  background: linear-gradient(180deg, #576bbc3a 0%, #132a53 100%);
   box-shadow: 0 16px 14px 0 #04152d;
   padding: 18px 24px;
   max-width: 400px;
+  min-height: 800px;
+}
+
+.project-card-container:hover {
+  background: linear-gradient(180deg, #455fc9a1 0%, #132a53 100%);
+  box-shadow: 0 16px 14px 0 #04152d;
 }
 
 .project-card-image {
@@ -33,7 +40,7 @@
   flex-direction: row;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 6px;
+  gap: 8px;
   list-style: none;
 }
 
@@ -42,6 +49,7 @@
   font-weight: 400;
   border-radius: 100px;
   background: var(--color-dark);
+  background: var(--color-special);
   padding: 2px 22px;
 }
 

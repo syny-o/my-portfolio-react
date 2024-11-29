@@ -1,4 +1,4 @@
-import React from "react";
+import { FaCheck } from "react-icons/fa6";
 import "./ContactForm.css";
 import Button from "../Shared/Button";
 
@@ -33,7 +33,11 @@ const ContactForm = () => {
             placeholder="Zpráva"
           ></textarea>
         </div>
-        <Button text={"Odeslat"} href={""} />
+        <Button
+          text={"Odeslat"}
+          href={""}
+          icon={<FaCheck className="icon" />}
+        />
       </form>
     </section>
   );

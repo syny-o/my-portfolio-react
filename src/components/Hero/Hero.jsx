@@ -1,5 +1,7 @@
 import React from "react";
 import { ReactTyped } from "react-typed";
+import { HiDownload } from "react-icons/hi";
+
 import "./Hero.css";
 import Carousel from "./Carousel";
 import Button from "../Shared/Button";
@@ -8,7 +10,10 @@ function Hero() {
   return (
     <section className="hero-container">
       <div className="content">
-        <img className="avatar" src="/assets/avatar/syny.png" alt="" />
+        <div className="avatar-overlay">
+          <img className="avatar" src="/assets/avatar/syny.png" alt="" />
+        </div>
+
         <h1 className="hero-title">Ondřej Synek</h1>
         <p className="description">Rád používám...</p>
         <p className="description-tech">
@@ -17,7 +22,7 @@ function Hero() {
               "Python",
               "Django",
               "PyQt",
-              "Javascript",
+              "JavaScript",
               "React JS",
               "TailWind CSS",
               "Bootstrap",
@@ -27,7 +32,11 @@ function Hero() {
           />
         </p>
 
-        <Button text={"Kontaktovat"} href={"#"} />
+        <Button
+          text={"Stáhnout CV"}
+          href={"#"}
+          icon={<HiDownload className="icon" />}
+        />
       </div>
 
       {/* <img

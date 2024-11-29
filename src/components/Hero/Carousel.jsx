@@ -30,7 +30,7 @@ export default () => {
       onSwiper={(swiper) => console.log(swiper)}
       onSlideChange={() => console.log("slide change")}
       style={{
-        "--swiper-pagination-color": "rgb(255,50,255)",
+        "--swiper-pagination-color": "#1396d7",
         "--swiper-pagination-bullet-inactive-color": "#19376d",
         "--swiper-pagination-bullet-inactive-opacity": "1",
         "--swiper-pagination-bullet-size": "16px",
@@ -49,7 +49,7 @@ export default () => {
       <SwiperSlide>
         <img
           // src="/assets/hero/heroImage.png"
-          src="/assets/projects/r2editor.png"
+          src="/assets/projects/marketasynkova.png"
           alt="hero-image"
         />
       </SwiperSlide>
@@ -63,7 +63,8 @@ export default () => {
       <SwiperSlide>
         <img
           // src="/assets/hero/heroImage.png"
-          src="/assets/projects/marketasynkova.png"
+
+          src="/assets/projects/r2editor.png"
           alt="hero-image"
         />
       </SwiperSlide>

@@ -42,7 +42,7 @@ export default () => {
         rotate: 0,
         stretch: 0,
         depth: 1000,
-        modifier: 1,
+        modifier: 1.5,
         slideShadows: false,
       }}
     >

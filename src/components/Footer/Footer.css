@@ -9,7 +9,6 @@
 .footer-container {
   padding: 20px;
   margin: auto;
-  margin-top: 60px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -29,15 +28,6 @@
     align-items: center;
     /* gap: 100px; */
     max-width: 1400px;
-  }
-
-  .social {
-    /* width: 40%; */
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 37px;
-    padding: 20px;
   }
 
   .footer-contact {

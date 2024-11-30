@@ -7,14 +7,14 @@ function ExperienceElement({ careerItem, id }) {
       <div className="career-item-details">
         <p className="color-special">{`${careerItem.startDate} - ${careerItem.endDate}`}</p>
         <h3>
-          {`${careerItem.role}`},{" "}
-          <span className="color-special">{` ${careerItem.organisation}`}</span>
+          {`${careerItem.role}`} <span className="color-special">|</span>{" "}
+          <span className="">{` ${careerItem.organisation}`}</span>
         </h3>
-        <ul>
+        {/* <ul>
           {careerItem.experiences.map((experience, id) => {
             return <li key={id}>{experience}</li>;
           })}
-        </ul>
+        </ul> */}
       </div>
     </li>
   );

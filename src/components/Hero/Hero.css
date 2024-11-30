@@ -118,8 +118,8 @@
 
 .top-blur {
   position: absolute;
-  width: 40vw;
-  height: 40vw;
+  width: 30vw;
+  height: 30vw;
   /* min-width: 350px; */
   /* min-width: 350px; */
   /* top: -128px; */
@@ -169,6 +169,10 @@
 
   .carousel {
     width: 300px;
+    display: none;
+  }
+
+  .top-blur {
     display: none;
   }
 }

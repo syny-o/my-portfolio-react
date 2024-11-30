@@ -1,6 +1,6 @@
 [
   {
-    "title": "Ubytování Prachovec",
+    "title": "Prachovec",
     "imageSrc": "/assets/projects/prachovec.png",
     "description": "Webová aplikace poskytující informace a rezervaci ubytování v areálu Prachovec. Disponuje redakčním systémem, kde lze mimo jiné rozesílat newslettery.",
     "skills": ["Django", "Bootsrap", "Nginx", "Postgres", "Selery", "Redis"],
@@ -8,7 +8,7 @@
     "source": "https://www.github.com"
   },
   {
-    "title": "Markéta Synková Portfolio",
+    "title": "Markéta Synková",
     "imageSrc": "/assets/projects/marketasynkova.png",
     "description": "Jednoduchá webová aplikace s fotogalerií kde frontend je napsán v Reactu a backend v Djangu. Komunikace je realizována prostřednictvím REST API.",
     "skills": ["React JS", "Django", "Tailwind CSS", "Rest API"],

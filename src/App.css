@@ -99,6 +99,7 @@
   border-radius: 50%; /* Kulatý tvar */
   filter: blur(2px); /* Jemné rozmazání, aby vypadala jako hvězda */
   box-shadow: 0 0 10px var(--color-bg), 0 0 20px var(--color-primary); /* Svítivý efekt */
+  box-shadow: 0 0 10px var(--color-bg), 0 0 20px var(--color-special); /* Svítivý efekt */
   animation: twinkle 4s infinite ease-in-out, moveShape 20s infinite ease-in-out;
 }
 
@@ -111,39 +112,39 @@
   animation-duration: 12s;
 }
 .shape2 {
-  width: 10px;
-  height: 10px;
+  width: 15px;
+  height: 15px;
   top: 20%;
   left: 10%;
   animation-duration: 10s;
 }
 
 .shape4 {
-  width: 7px;
-  height: 7px;
+  width: 17px;
+  height: 17px;
   top: 30%;
-  left: 40%;
+  left: 25%;
   animation-duration: 16s;
 }
 
 .shape3 {
   width: 10px;
   height: 10px;
-  bottom: 35%;
-  left: 45%;
+  bottom: 20%;
+  left: 35%;
   animation-duration: 14s;
 }
 .shape5 {
   width: 10px;
   height: 10px;
-  bottom: 20%;
-  left: 30%;
+  bottom: 15%;
+  left: 22%;
   animation-duration: 18s;
 }
 .shape6 {
   width: 8px;
   height: 8px;
-  bottom: 15%;
+  bottom: 10%;
   left: 10%;
   animation-duration: 20s;
 }
@@ -170,7 +171,7 @@
   }
   50% {
     opacity: 1;
-    transform: scale(1.5); /* Zvětšení pro efekt blikání */
+    transform: scale(2); /* Zvětšení pro efekt blikání */
   }
 }
 

@@ -9,17 +9,17 @@ import Button from "../Shared/Button";
 function Hero() {
   return (
     <section className="hero-container">
-      <div class="shape shape1"></div>
-      <div class="shape shape2"></div>
-      <div class="shape shape3"></div>
-      <div class="shape shape4"></div>
-      <div class="shape shape5"></div>
-      <div class="shape shape6"></div>
-      <div class="shape shape7"></div>
-      <div class="shape shape8"></div>
-      <div class="shape shape9"></div>
-      <div class="shape shape10"></div>
       <div className="content">
+        <div class="shape shape1"></div>
+        <div class="shape shape2"></div>
+        <div class="shape shape3"></div>
+        <div class="shape shape4"></div>
+        <div class="shape shape5"></div>
+        <div class="shape shape6"></div>
+        <div class="shape shape7"></div>
+        <div class="shape shape8"></div>
+        <div class="shape shape9"></div>
+        <div class="shape shape10"></div>
         <div className="top-blur"></div>
         <div className="avatar-overlay">
           <img className="avatar" src="/assets/avatar/syny.png" alt="" />

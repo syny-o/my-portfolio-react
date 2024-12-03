@@ -1,7 +1,6 @@
 :root {
   /* Colors */
   --color-text: #fff;
-  /* --color-text-grey: rgba(255, 255, 255, 0.4); */
   --color-text-grey: #fff4;
   --color-primary: #576cbc;
   --color-secondary: #19376d;
@@ -13,6 +12,10 @@
 
   /* Fonts */
   --font-roboto: "Roboto";
+}
+
+.color-special {
+  color: var(--color-special) !important;
 }
 
 * {
@@ -31,65 +34,24 @@
   height: 100%;
 
   overflow: hidden;
-  /* background: linear-gradient(
-    -45deg,
-    var(--color-bg),
-    var(--color-primary),
-    var(--color-dark),
-    var(--color-secondary)
-  );
-  background-size: 400% 400%;
-  animation: gradientBG 12s ease infinite; */
 }
 
-@keyframes gradientBG {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
-
-.color-special {
-  color: var(--color-special) !important;
+.container {
+  color: var(--color-text);
+  margin: auto;
+  /* margin-top: 80px; */
+  max-width: 1280px;
+  margin-bottom: 250px;
 }
 
 .section-title {
-  color: var(--color-text);
   color: var(--color-text-grey);
   font-size: 35px;
   font-weight: 700;
   letter-spacing: 1.75px;
   text-transform: uppercase;
   text-align: center;
-  /* opacity: 0.4; */
   margin-bottom: 30px;
-  /* margin-top: 150px; */
-}
-
-.hero-container {
-  position: relative;
-  display: flex;
-  /* flex-direction: column; */
-  /* flex-direction: column-reverse; */
-  align-items: center;
-  justify-content: center;
-  gap: 25px;
-  /* margin-top: 150px; */
-  /* margin-bottom: 160px; */
-  /* margin-left: 10%; */
-  /* margin-right: 10%; */
-  height: 100vh;
-  z-index: 1;
-  /* background: linear-gradient(
-    0deg,
-    rgba(25, 55, 109, 0.2) 0%,
-    rgba(25, 55, 109, 1) 100%
-  ); */
 }
 
 .shape {
@@ -107,45 +69,46 @@
 .shape1 {
   width: 10px;
   height: 10px;
-  top: 15%;
-  left: 25%;
+  top: 25%;
+  left: 5%;
   animation-duration: 12s;
 }
 .shape2 {
   width: 15px;
   height: 15px;
   top: 20%;
-  left: 10%;
+  left: 50%;
   animation-duration: 10s;
 }
 
-.shape4 {
+.shape3 {
   width: 17px;
   height: 17px;
   top: 30%;
-  left: 25%;
+  left: 90%;
   animation-duration: 16s;
 }
 
-.shape3 {
+.shape4 {
   width: 10px;
   height: 10px;
   bottom: 20%;
-  left: 35%;
+  left: 5%;
   animation-duration: 14s;
 }
+
 .shape5 {
   width: 10px;
   height: 10px;
   bottom: 15%;
-  left: 22%;
+  left: 50%;
   animation-duration: 18s;
 }
 .shape6 {
   width: 8px;
   height: 8px;
-  bottom: 10%;
-  left: 10%;
+  bottom: 20%;
+  left: 95%;
   animation-duration: 20s;
 }
 
@@ -179,17 +142,10 @@
   left: 180px !important;
 }
 
-.container {
-  color: var(--color-text);
-  margin: auto;
-  /* margin-top: 80px; */
-  max-width: 1400px;
-  margin-bottom: 250px;
-}
-
 @media screen and (max-width: 830px) {
   .container {
-    max-width: 95%;
+    max-width: inherit;
+    width: 95%;
     margin-bottom: 120px;
   }
 

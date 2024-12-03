@@ -12,10 +12,23 @@
 
   /* Fonts */
   --font-roboto: "Roboto";
+
+  --font-size-sm: 1rem;
+  --font-size-l: 1.5rem;
+  --font-size-xl: 2.2rem;
+  --font-size-xxl: 4rem;
+  /* --font-size-sm: 18px;
+  --font-size-l: 25px;
+  --font-size-xl: 35px;
+  --font-size-xxl: 64px; */
 }
 
 .color-special {
   color: var(--color-special) !important;
+}
+
+html {
+  font-size: 16px;
 }
 
 * {
@@ -24,6 +37,7 @@
   padding: 0;
   font-family: "Outfit", Arial, Helvetica, sans-serif;
   letter-spacing: 1px;
+  font-size: var(--font-size-l);
 }
 
 .App {
@@ -56,6 +70,10 @@
 }
 
 @media screen and (max-width: 830px) {
+  html {
+    font-size: 13px;
+  }
+
   .container {
     max-width: inherit;
     width: 95%;

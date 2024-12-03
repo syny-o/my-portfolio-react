@@ -49,6 +49,7 @@ textarea {
   color: var(--color-special);
   right: 5px;
   top: 5px;
+  font-size: var(--font-size-sm);
 }
 
 .form-row {
@@ -83,8 +84,7 @@ textarea {
   border-color: var(--color-primary);
   border-radius: 10px;
   padding: 15px;
-  /* margin: 15px; */
-  font-size: 25px;
+
   font-family: var(--font-roboto);
   font-weight: 500;
   color: var(--color-text);

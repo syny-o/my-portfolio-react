@@ -24,15 +24,12 @@
   padding: 0;
   font-family: "Outfit", Arial, Helvetica, sans-serif;
   letter-spacing: 1px;
-  /* font-family: "Robot"; */
-  /* color: var(--color-text); */
 }
 
 .App {
   background-color: var(--color-bg);
   width: 100%;
   height: 100%;
-
   overflow: hidden;
 }
 
@@ -54,90 +51,6 @@
   margin-bottom: 30px;
 }
 
-.shape {
-  position: absolute;
-  background: var(--color-secondary); /* Jemná průhlednost */
-
-  border-radius: 50%; /* Kulatý tvar */
-  filter: blur(2px); /* Jemné rozmazání, aby vypadala jako hvězda */
-  box-shadow: 0 0 10px var(--color-bg), 0 0 20px var(--color-primary); /* Svítivý efekt */
-  box-shadow: 0 0 10px var(--color-bg), 0 0 20px var(--color-special); /* Svítivý efekt */
-  animation: twinkle 4s infinite ease-in-out, moveShape 20s infinite ease-in-out;
-}
-
-/* Specifikace jednotlivých kruhů */
-.shape1 {
-  width: 10px;
-  height: 10px;
-  top: 25%;
-  left: 5%;
-  animation-duration: 12s;
-}
-.shape2 {
-  width: 15px;
-  height: 15px;
-  top: 20%;
-  left: 50%;
-  animation-duration: 10s;
-}
-
-.shape3 {
-  width: 17px;
-  height: 17px;
-  top: 30%;
-  left: 90%;
-  animation-duration: 16s;
-}
-
-.shape4 {
-  width: 10px;
-  height: 10px;
-  bottom: 20%;
-  left: 5%;
-  animation-duration: 14s;
-}
-
-.shape5 {
-  width: 10px;
-  height: 10px;
-  bottom: 15%;
-  left: 50%;
-  animation-duration: 18s;
-}
-.shape6 {
-  width: 8px;
-  height: 8px;
-  bottom: 20%;
-  left: 95%;
-  animation-duration: 20s;
-}
-
-/* Animace */
-@keyframes moveShape {
-  0% {
-    transform: translate(0, 0) scale(1);
-  }
-  50% {
-    transform: translate(50px, -50px) scale(1.1);
-  }
-  100% {
-    transform: translate(0, 0) scale(1);
-  }
-}
-
-/* Animace blikání hvězd */
-@keyframes twinkle {
-  0%,
-  100% {
-    opacity: 0.2;
-    transform: scale(1);
-  }
-  50% {
-    opacity: 1;
-    transform: scale(2); /* Zvětšení pro efekt blikání */
-  }
-}
-
 .swiper-button-prev {
   left: 180px !important;
 }
@@ -147,10 +60,5 @@
     max-width: inherit;
     width: 95%;
     margin-bottom: 120px;
-  }
-
-  .shape {
-    animation: none;
-    display: none;
   }
 }

@@ -1,11 +1,11 @@
 import React from "react";
 import "./Button.css";
 
-function Button({ text, href, icon }) {
+function Button({ text, href, type, icon }) {
   return (
-    <a className="btn" href={href}>
+    <button className="btn" href={href} type={type}>
       {icon} {text}
-    </a>
+    </button>
   );
 }
 

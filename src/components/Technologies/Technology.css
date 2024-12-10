@@ -12,7 +12,9 @@
   align-items: center;
   justify-content: center;
   width: 120px;
+  width: 7.5rem;
   height: 120px;
+  height: 7.5rem;
 }
 
 .technology-image-container:hover {
@@ -20,7 +22,8 @@
 }
 
 .technology-image-container img {
-  width: 75px;
+  /* width: 75px; */
+  width: 4.5rem;
 }
 
 .technology p {

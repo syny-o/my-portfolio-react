@@ -37,7 +37,7 @@ function Hero() {
 
         <Button
           text={"Stáhnout CV"}
-          href={"#"}
+          href={"/assets/cv_eng.pdf"}
           icon={<HiDownload className="icon" />}
         />
       </div>

@@ -5,7 +5,7 @@ import Technology from "./Technology";
 
 function Technologies() {
   return (
-    <section className="container" id="technologies">
+    <section className="container" id="skills">
       <h2 className="section-title">Dovednosti</h2>
 
       <div className="technologies">

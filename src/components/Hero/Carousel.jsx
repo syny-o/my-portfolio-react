@@ -20,9 +20,9 @@ export default () => {
   return (
     <Swiper
       // install Swiper modules
-      modules={[Navigation, Pagination, EffectCoverflow]}
+      modules={[Navigation, Pagination]}
       // spaceBetween={50}
-      slidesPerView={3}
+      slidesPerView={1}
       centeredSlides
       navigation
       pagination={{ clickable: true }}
@@ -36,37 +36,25 @@ export default () => {
         "--swiper-pagination-bullet-size": "16px",
         "--swiper-pagination-bullet-horizontal-gap": "6px",
       }}
-      initialSlide={2}
-      effect="coverflow"
-      coverflowEffect={{
-        rotate: 0,
-        stretch: 0,
-        depth: 1000,
-        modifier: 1.5,
-        slideShadows: false,
-      }}
+      initialSlide={0}
+      // effect="coverflow"
+      // coverflowEffect={{
+      //   rotate: 0,
+      //   stretch: 0,
+      //   // depth: 1000,
+      //   depth: 1,
+      //   modifier: 1,
+      //   slideShadows: false,
+      // }}
     >
       <SwiperSlide>
-        <img
-          // src="/assets/hero/heroImage.png"
-          src="/assets/projects/marketasynkova.png"
-          alt="hero-image"
-        />
+        <img src="/assets/projects/r2editor.png" alt="hero-image" />
       </SwiperSlide>
       <SwiperSlide>
-        <img
-          // src="/assets/hero/heroImage.png"
-          src="/assets/projects/prachovec.png"
-          alt="hero-image"
-        />
+        <img src="/assets/projects/marketasynkova.png" alt="hero-image" />
       </SwiperSlide>
       <SwiperSlide>
-        <img
-          // src="/assets/hero/heroImage.png"
-
-          src="/assets/projects/r2editor.png"
-          alt="hero-image"
-        />
+        <img src="/assets/projects/prachovec.png" alt="hero-image" />
       </SwiperSlide>
     </Swiper>
   );

@@ -3,7 +3,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 25px;
+  gap: 125px;
   height: 100vh;
   z-index: 1;
 }
@@ -141,18 +141,18 @@
 }
 
 .carousel {
-  width: 900px;
+  width: 740px;
   /* height: 800px; */
 }
 
 .carousel img {
-  height: 400px;
+  height: 510px;
   /* transform: skewY(5deg); */
   padding: 50px;
   border-radius: 60px;
 }
 
-@media screen and (max-width: 830px) {
+@media screen and (max-width: 1400px) {
   .hero-container {
     flex-direction: column-reverse;
   }

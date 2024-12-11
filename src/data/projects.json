@@ -1,26 +1,54 @@
-[
-  {
-    "title": "Prachovec",
-    "imageSrc": "/assets/projects/prachovec.png",
-    "description": "Webová aplikace poskytující informace a rezervaci ubytování v areálu Prachovec. Disponuje redakčním systémem, kde lze mimo jiné rozesílat newslettery.",
-    "skills": ["Django", "Bootsrap", "Nginx", "Postgres", "Celery", "Redis"],
-    "demo": "https://www.example.com",
-    "source": "https://www.github.com"
-  },
-  {
-    "title": "Markéta Synková",
-    "imageSrc": "/assets/projects/marketasynkova.png",
-    "description": "Jednoduchá webová aplikace s fotogalerií kde frontend je napsán v Reactu a backend v Djangu. Komunikace je realizována prostřednictvím REST API.",
-    "skills": ["React JS", "Django", "Tailwind CSS", "Rest API"],
-    "demo": "https://www.example.com",
-    "source": "https://www.github.com"
-  },
-  {
-    "title": "R2 Editor",
-    "imageSrc": "/assets/projects/r2editor.png",
-    "description": "Desktopová aplikace pro psaní automatických testů. Obsahuje našeptávač kódu, zvýraznění syntaxe, otevření/uložení projektu, propojení s requirements serverem.",
-    "skills": ["Python", "PyQt", "MS SQL", "Pandas"],
-    "demo": "https://www.example.com",
-    "source": "https://www.github.com"
-  }
-]
+{
+  "cs": [
+    {
+      "title": "Prachovec",
+      "imageSrc": "/assets/projects/prachovec.png",
+      "description": "Webová aplikace poskytující informace a rezervaci ubytování v areálu Prachovec. Disponuje redakčním systémem, kde lze mimo jiné rozesílat newslettery.",
+      "skills": ["Django", "Bootsrap", "Nginx", "Postgres", "Celery", "Redis"],
+      "demo": "https://www.example.com",
+      "source": "https://github.com/syny-o/prachovec"
+    },
+    {
+      "title": "Markéta Synková",
+      "imageSrc": "/assets/projects/marketasynkova.png",
+      "description": "Jednoduchá webová aplikace s fotogalerií kde frontend je napsán v Reactu a backend v Djangu. Komunikace je realizována prostřednictvím REST API.",
+      "skills": ["React JS", "Django", "Tailwind CSS", "Rest API"],
+      "demo": "https://www.example.com",
+      "source": "https://github.com/syny-o/kity-django"
+    },
+    {
+      "title": "R2 Editor",
+      "imageSrc": "/assets/projects/r2editor.png",
+      "description": "Desktopová aplikace pro psaní automatických testů. Obsahuje našeptávač kódu, zvýraznění syntaxe, otevření/uložení projektu, propojení s requirements serverem.",
+      "skills": ["Python", "PyQt", "MS SQL", "Pandas"],
+      "demo": "https://www.example.com",
+      "source": "https://github.com/syny-o/R2Editor"
+    }
+  ],
+  "en": [
+    {
+      "title": "Prachovec",
+      "imageSrc": "/assets/projects/prachovec.png",
+      "description": "A web application providing information and booking for accommodation at the Prachovec complex. Features a CMS that includes functionalities like sending newsletters.",
+      "skills": ["Django", "Bootstrap", "Nginx", "Postgres", "Celery", "Redis"],
+      "demo": "https://www.example.com",
+      "source": "https://github.com/syny-o/prachovec"
+    },
+    {
+      "title": "Markéta Synková",
+      "imageSrc": "/assets/projects/marketasynkova.png",
+      "description": "A simple web application with a photo gallery where the frontend is written in React and the backend in Django. Communication is handled via REST API.",
+      "skills": ["React JS", "Django", "Tailwind CSS", "Rest API"],
+      "demo": "https://www.example.com",
+      "source": "https://www.github.com"
+    },
+    {
+      "title": "R2 Editor",
+      "imageSrc": "/assets/projects/r2editor.png",
+      "description": "A desktop application for writing automated tests. It includes features like code autocompletion, syntax highlighting, opening/saving projects, and integration with a requirements server.",
+      "skills": ["Python", "PyQt", "MS SQL", "Pandas"],
+      "demo": "https://www.example.com",
+      "source": "https://github.com/syny-o/R2Editor"
+    }
+  ]
+}

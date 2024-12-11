@@ -1,10 +1,12 @@
 import { useState } from "react";
+import { useLanguage } from "../../context/LanguageContext";
 
 import { FaCheck } from "react-icons/fa6";
 import "./ContactForm.css";
 import Button from "../Shared/Button";
 
 const ContactForm = () => {
+  const { globalTexts } = useLanguage();
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -17,11 +19,11 @@ const ContactForm = () => {
     if (field === "email") {
       const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
       if (!emailRegex.test(value)) {
-        error = "Zadejte platnou emailovou adresu.";
+        error = true;
       }
     } else if (field === "message") {
       if (value.trim() === "") {
-        error = "Napište nějakou zprávu.";
+        error = true;
       }
     }
     return error;
@@ -65,7 +67,7 @@ const ContactForm = () => {
 
   return (
     <section id="contact" className="container">
-      <h2 className="section-title">Kontakt</h2>
+      <h2 className="section-title">{globalTexts.sectionForm}</h2>
       <form className="contact-form" onSubmit={handleSubmit}>
         <div className="form-row">
           <div className="form-field-wrapper">
@@ -73,7 +75,7 @@ const ContactForm = () => {
               type="text"
               id="name"
               className="form-input"
-              placeholder="Jméno"
+              placeholder={globalTexts.formName}
               value={formData.name}
               onChange={handleChange}
             />
@@ -88,7 +90,11 @@ const ContactForm = () => {
               value={formData.email}
               onChange={handleChange}
             />
-            {errors.email && <span className="form-error">{errors.email}</span>}
+            {errors.email && (
+              <span className="form-error">
+                {globalTexts.formEmailNotValid}
+              </span>
+            )}
           </div>
         </div>
 
@@ -97,19 +103,19 @@ const ContactForm = () => {
             <textarea
               id="message"
               className="form-control message-input"
-              placeholder="Zpráva"
+              placeholder={globalTexts.formMessage}
               value={formData.message}
               onChange={handleChange}
               rows={6}
             ></textarea>
             {errors.message && (
-              <span className="form-error">{errors.message}</span>
+              <span className="form-error">{globalTexts.formMessageEmpty}</span>
             )}
           </div>
         </div>
 
         <Button
-          text={"Odeslat"}
+          text={globalTexts.formButton}
           href={""}
           type={"submit"}
           icon={<FaCheck className="icon" />}

@@ -1,4 +1,5 @@
-import React from "react";
+import { useLanguage } from "../../context/LanguageContext";
+
 import { ReactTyped } from "react-typed";
 import { HiDownload } from "react-icons/hi";
 
@@ -8,6 +9,7 @@ import Button from "../Shared/Button";
 import Stars from "./Stars";
 
 function Hero() {
+  const { globalTexts, language } = useLanguage();
   return (
     <section className="hero-container">
       <div className="content">
@@ -18,7 +20,7 @@ function Hero() {
         </div>
 
         <h1 className="hero-title">Ondřej Synek</h1>
-        <p className="description">Rád používám...</p>
+        <p className="description">{globalTexts.greeting}</p>
         <p className="description-tech">
           <ReactTyped
             strings={[
@@ -36,8 +38,8 @@ function Hero() {
         </p>
 
         <Button
-          text={"Stáhnout CV"}
-          href={"/assets/cv_eng.pdf"}
+          text={globalTexts.heroButton}
+          href={language === "cs" ? "/assets/cv_cs.pdf" : "/assets/cv_eng.pdf"}
           icon={<HiDownload className="icon" />}
         />
       </div>

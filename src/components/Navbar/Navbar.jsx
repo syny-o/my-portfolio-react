@@ -1,10 +1,12 @@
 import React, { useState } from "react";
-import { HiMenuAlt1 } from "react-icons/hi";
+import { useLanguage } from "../../context/LanguageContext";
 import "./Navbar.css";
 import SocialBox from "../Shared/SocialBox";
+import { HiMenuAlt1 } from "react-icons/hi";
 
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const { globalTexts } = useLanguage();
   return (
     <nav className="navbar">
       {/* <a className="title" href="/">
@@ -29,16 +31,16 @@ function Navbar() {
             onClick={() => setMenuOpen(false)}
           >
             <li>
-              <a href="#skills">Dovednosti</a>
+              <a href="#skills">{globalTexts.sectionSkills}</a>
             </li>
             <li>
-              <a href="#experience">Zkušenosti</a>
+              <a href="#experience">{globalTexts.sectionExperience}</a>
             </li>
             <li>
-              <a href="#projects">Projekty</a>
+              <a href="#projects">{globalTexts.sectionProjects}</a>
             </li>
             <li>
-              <a href="#contact">Kontakt</a>
+              <a href="#contact">{globalTexts.sectionForm}</a>
             </li>
           </ul>
           <SocialBox />

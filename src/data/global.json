@@ -1,0 +1,30 @@
+{
+  "cs": {
+    "greeting": "Rád používám...",
+    "heroButton": "Stáhnout CV",
+    "sectionSkills": "Dovednosti",
+    "sectionExperience": "Zkušenosti",
+    "sectionProjects": "Projekty",
+    "sectionForm": "Kontakt",
+    "formName": "Jméno",
+    "formEmail": "Email",
+    "formMessage": "Zpráva",
+    "formButton": "Odeslat",
+    "formEmailNotValid": "Zadejte platnou emailovou adresu",
+    "formMessageEmpty": "Napište nějakou zprávu"
+  },
+  "en": {
+    "greeting": "My stack is...",
+    "heroButton": "Download CV",
+    "sectionSkills": "Skills",
+    "sectionExperience": "Experience",
+    "sectionProjects": "Projects",
+    "sectionForm": "Contact",
+    "formName": "Name",
+    "formEmail": "Email",
+    "formMessage": "Message",
+    "formButton": "Submit",
+    "formEmailNotValid": "Email is not valid",
+    "formMessageEmpty": "Message field is required"
+  }
+}

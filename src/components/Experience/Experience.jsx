@@ -1,18 +1,20 @@
 import React from "react";
 import "./Experience.css";
-import career from "../../data/career.json";
-import skills from "../../data/skills.json";
 import ExperienceElement from "./ExperienceElement";
+import { useLanguage } from "../../context/LanguageContext";
 
 function Experience() {
+  const { language, careerData } = useLanguage(); // Získání aktuálního jazyka a textů z kontextu
+
   return (
     <section className="container" id="experience">
-      <h2 className="section-title">Zkušenosti</h2>
-
+      <h2 className="section-title">
+        {language === "cs" ? "Zkušenosti" : "Experience"}
+      </h2>
       <ul className="career">
-        {career.map((careerItem, id) => {
-          return <ExperienceElement id={id} careerItem={careerItem} />;
-        })}
+        {careerData.map((careerItem, id) => (
+          <ExperienceElement key={id} careerItem={careerItem} />
+        ))}
       </ul>
     </section>
   );

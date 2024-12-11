@@ -6,18 +6,23 @@ import Navbar from "./components/Navbar/Navbar";
 import Technologies from "./components/Technologies/Technologies";
 import ContactForm from "./components/ContactForm/ContactForm";
 import Footer from "./components/Footer/Footer";
+import LanguageSwitch from "./components/Shared/LanguageSwitch";
+import { LanguageProvider } from "./context/LanguageContext";
 
 function App() {
   return (
     <>
       <div className="App">
-        <Navbar />
-        <Hero />
-        <Technologies />
-        <Experience />
-        <Projects />
-        <ContactForm />
-        <Footer />
+        <LanguageProvider>
+          <LanguageSwitch />
+          <Navbar />
+          <Hero />
+          <Technologies />
+          <Experience />
+          <Projects />
+          <ContactForm />
+          <Footer />
+        </LanguageProvider>
       </div>
     </>
   );

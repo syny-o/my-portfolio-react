@@ -3,7 +3,7 @@
     "title": "Prachovec",
     "imageSrc": "/assets/projects/prachovec.png",
     "description": "Webová aplikace poskytující informace a rezervaci ubytování v areálu Prachovec. Disponuje redakčním systémem, kde lze mimo jiné rozesílat newslettery.",
-    "skills": ["Django", "Bootsrap", "Nginx", "Postgres", "Selery", "Redis"],
+    "skills": ["Django", "Bootsrap", "Nginx", "Postgres", "Celery", "Redis"],
     "demo": "https://www.example.com",
     "source": "https://www.github.com"
   },

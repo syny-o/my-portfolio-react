@@ -29,18 +29,16 @@ function Navbar() {
             onClick={() => setMenuOpen(false)}
           >
             <li>
-              <a href="#about">Dovednosti</a>
+              <a href="#skills">Dovednosti</a>
             </li>
             <li>
-              <a href="#experiences">Zkušenosti</a>
+              <a href="#experience">Zkušenosti</a>
             </li>
             <li>
-              <a href="#projcets">Projekty</a>
+              <a href="#projects">Projekty</a>
             </li>
             <li>
-              <a href="#contact" className="color-special">
-                <span className="color-special"></span>Kontakt
-              </a>
+              <a href="#contact">Kontakt</a>
             </li>
           </ul>
           <SocialBox />

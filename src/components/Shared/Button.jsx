@@ -3,7 +3,11 @@ import "./Button.css";
 
 function Button({ text, href, type, icon }) {
   return (
-    <button className="btn" href={href} type={type}>
+    <button
+      className="btn"
+      onClick={() => window.open(href, "_blank")}
+      type={type}
+    >
       {icon} {text}
     </button>
   );

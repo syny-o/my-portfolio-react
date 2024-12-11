@@ -29,6 +29,7 @@
 
 html {
   font-size: 16px;
+  scroll-behavior: smooth;
 }
 
 * {
@@ -65,9 +66,9 @@ html {
   margin-bottom: 30px;
 }
 
-.swiper-button-prev {
+/* .swiper-button-prev {
   left: 180px !important;
-}
+} */
 
 @media screen and (max-width: 830px) {
   html {

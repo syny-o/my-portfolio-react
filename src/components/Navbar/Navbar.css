@@ -56,6 +56,11 @@
   color: var(--color-text);
 }
 
+.menu-items a:hover {
+  text-decoration: none;
+  color: var(--color-special);
+}
+
 @media screen and (max-width: 830px) {
   .menu-btn-box {
     width: 120px;

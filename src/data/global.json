@@ -11,7 +11,9 @@
     "formMessage": "Zpráva",
     "formButton": "Odeslat",
     "formEmailNotValid": "Zadejte platnou emailovou adresu",
-    "formMessageEmpty": "Napište nějakou zprávu"
+    "formMessageEmpty": "Napište nějakou zprávu",
+    "formSubmitSuccess": "Děkuji za zprávu, ozvu se co nejdříve:)",
+    "formSubmitError": "Zprávu se nepodařilo odeslat, zkontrolujte formulář."
   },
   "en": {
     "greeting": "My stack is...",
@@ -25,6 +27,8 @@
     "formMessage": "Message",
     "formButton": "Submit",
     "formEmailNotValid": "Email is not valid",
-    "formMessageEmpty": "Message field is required"
+    "formMessageEmpty": "Message field is required",
+    "formSubmitSuccess": "Message sent successfully!",
+    "formSubmitError": "Error sending message, check the form please."
   }
 }

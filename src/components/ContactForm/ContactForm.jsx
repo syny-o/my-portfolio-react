@@ -1,7 +1,8 @@
 import { useState } from "react";
 import { useLanguage } from "../../context/LanguageContext";
-
 import { FaCheck } from "react-icons/fa6";
+
+import { API_URL } from "../../constants/global";
 import "./ContactForm.css";
 import Button from "../Shared/Button";
 
@@ -13,11 +14,12 @@ const ContactForm = () => {
     message: "",
   });
   const [errors, setErrors] = useState({ email: "", message: "" });
+  const [status, setStatus] = useState("");
 
   const validateField = (field, value) => {
     let error = "";
     if (field === "email") {
-      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
       if (!emailRegex.test(value)) {
         error = true;
       }
@@ -50,6 +52,7 @@ const ContactForm = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    setStatus("");
 
     // Validate all fields
     const emailError = validateField("email", formData.email);
@@ -61,7 +64,34 @@ const ContactForm = () => {
     });
 
     if (!emailError && !messageError) {
-      alert("Formulář byl úspěšně odeslán!");
+      sendFormDataToApi();
+    }
+  };
+
+  const sendFormDataToApi = async () => {
+    setStatus("Sending...");
+
+    try {
+      const fData = new FormData();
+      fData.set("name", formData.name);
+      fData.set("email", formData.email);
+      fData.set("message", formData.message);
+      console.log(JSON.stringify(formData));
+      const response = await fetch(API_URL, {
+        method: "POST",
+        // headers: { "Content-Type": "application/json" },
+        // body: JSON.stringify(formData),
+        body: fData,
+      });
+
+      if (response.ok) {
+        setStatus(globalTexts.formSubmitSuccess);
+        setFormData({ name: "", email: "", message: "" });
+      } else {
+        setStatus(globalTexts.formSubmitError);
+      }
+    } catch (error) {
+      setStatus(globalTexts.formSubmitError);
     }
   };
 
@@ -121,6 +151,7 @@ const ContactForm = () => {
           icon={<FaCheck className="icon" />}
         />
       </form>
+      <p className="form-submit-status">{status}</p>
     </section>
   );
 };

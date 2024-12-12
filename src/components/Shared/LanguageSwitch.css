@@ -13,7 +13,7 @@
   color: #555;
   /* font-size: 16px; */
   font-size: var(--font-size-l);
-  /* font-weight: bold; */
+  font-weight: bold;
   cursor: pointer;
   padding: 5px 10px;
   transition: color 0.3s;
@@ -23,7 +23,7 @@
   /* color: #007bff; */
   color: var(--color-special);
   /* border-bottom: 2px solid #007bff; */
-  border-bottom: 2px solid var(--color-special);
+  border-bottom: 3px solid var(--color-special);
 }
 
 .language-button:hover {

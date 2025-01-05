@@ -24,11 +24,13 @@ export const ProjectCard = ({
         })}
       </ul>
       <div className="project-card-links">
-        {/* <Button
-          text={"Web"}
-          href={demo}
-          icon={<FaArrowRight className="icon" />}
-        /> */}
+        {demo && (
+          <Button
+            text={"Web"}
+            href={demo}
+            icon={<FaArrowRight className="icon" />}
+          />
+        )}
         <Button
           text={"Repo"}
           href={source}
